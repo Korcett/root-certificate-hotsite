@@ -628,3 +628,13 @@ ul.tabs li.current {
 .text-center {
   text-align: center;
 }
+
+p.cert-download {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+}
+span.cert-md5 {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
