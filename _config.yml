@@ -9,11 +9,11 @@ highlighter: pygments
 
 paginate: 20
 baseurl: /
-domain_name: 'http://yourblog-domain.com'
+domain_name: 'http://certificate-authority.korcett.com'
 google_analytics: 'UA-XXXXXXXX-X'
 
 # Details for the RSS feed generator
-url:            'http://your-blog-url.example.com'
+url:            'http://certificate-authority.korcett.com'
 author:         'Korcett Holdings Inc.'
 authorTwitter:  'korcett'
 
