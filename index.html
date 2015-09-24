@@ -3,12 +3,12 @@ profile: true
 ---
 
 <ul class="tabs">
-  <li class="tab-link current" data-tab="osx">Mac OS X</li>
-  <li class="tab-link" data-tab="windows">Windows</li>
-  <li class="tab-link" data-tab="linux">Linux</li>
+  <li class="tab-link osx" data-tab="osx">Mac OS X</li>
+  <li class="tab-link windows" data-tab="windows">Windows</li>
+  <li class="tab-link linux" data-tab="linux">Linux</li>
 </ul>
 
-<div id="osx" class="tab-content current">
+<div id="osx" class="tab-content">
   {% capture osx %}{% include osx.md %}{% endcapture %}
   {{ osx | markdownify }}
 </div>

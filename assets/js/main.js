@@ -44,5 +44,31 @@ $(document).ready(function(){
 
     $(this).addClass('current');
     $("#"+tab_id).addClass('current');
-  })
+  });
+
+  var OSName="Unknown OS";
+  if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
+  if (navigator.appVersion.indexOf("Mac")!=-1) OSName="MacOS";
+  if (navigator.appVersion.indexOf("X11")!=-1) OSName="UNIX";
+  if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
+
+  if (OSName === "Windows") {
+    $('ul.tabs li').removeClass('current');
+    $('.tab-content').removeClass('current');
+
+    $('ul.tabs li.windows').addClass('current');
+    $('#windows').addClass('current');
+  } else if (OSName === "Linux") {
+    $('ul.tabs li').removeClass('current');
+    $('.tab-content').removeClass('current');
+
+    $('ul.tabs li.linux').addClass('current');
+    $('#linux').addClass('current');
+  } else {
+    $('ul.tabs li').removeClass('current');
+    $('.tab-content').removeClass('current');
+
+    $('ul.tabs li.osx').addClass('current');
+    $('#osx').addClass('current');
+  }
 });
