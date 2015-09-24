@@ -17,7 +17,7 @@ There are two ways to trust the CAcert root certificates: one from the command l
 To import a trusted certificate use the following command:
 
 {% highlight sh %}
-sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain <certificate>
+sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain korcett-root-certificate.pem
 {% endhighlight %}
 
 This will add a trusted certificate to the System.keychain. You should modify the options and paths to suit your situation.

@@ -3,7 +3,7 @@
 1. Copy your CA to dir `/usr/local/share/ca-certificates/`.
 1. Run the command:
   {% highlight sh %}
-  sudo cp foo.crt /usr/local/share/ca-certificates/foo.crt
+  sudo cp korcett-root-certificate.pem /usr/local/share/ca-certificates/korcett-root-certificate.pem
   {% endhighlight %}
 3. Update the CA store:
   {% highlight sh %}
@@ -24,7 +24,7 @@
   {% endhighlight %}
 1. Add it as a new file to `/etc/pki/ca-trust/source/anchors/`:
   {% highlight sh %}
-  cp foo.crt /etc/pki/ca-trust/source/anchors/
+  cp korcett-root-certificate.pem /etc/pki/ca-trust/source/anchors/
   {% endhighlight %}
 1. Run the command:
   {% highlight sh %}
@@ -37,5 +37,5 @@
 
 Append your trusted certificate to file `/etc/pki/tls/certs/ca-bundle.crt`:
 {% highlight sh %}
-cat foo.crt >> /etc/pki/tls/certs/ca-bundle.crt
+cat korcett-root-certificate.pem >> /etc/pki/tls/certs/ca-bundle.crt
 {% endhighlight %}
