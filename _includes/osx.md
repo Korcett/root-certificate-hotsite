@@ -5,11 +5,11 @@ There are two ways to trust the CAcert root certificates: one from the command l
 ### Using the Keychain GUI
 
 1. Download the desired certificate to a known location.
-1. Open the certificate file, either using Command-O or by double-clicking on the file.
-1. When Keychain appears, select "Add".
-1. Search for the "Korcett Root Server" certificate in the list and double-click it.
-1. Click in the Trust dropdown arrow.
-1. Change the "Secure Sockets Layer (SSL)" option from "no value specified" to "Always Trust".
+1. Open the certificate file, either using **Command-O** or by double-clicking on the file.
+1. When Keychain appears, select **Add**.
+1. Search for the **Korcett Root Server** certificate in the list and double-click it.
+1. Expand the list by clicking in the Trust dropdown arrow.
+1. Change the **Secure Sockets Layer (SSL)** option to **Always Trust**.
 1. Close the window, you will be prompted to authenticate with your password to modify the Certificate Trust Settings.
 
 ### Using the command line
@@ -28,8 +28,8 @@ Firefox may not recognize the system certificate and still show a warning messag
 
 Follow the steps below to manually import the certificate:
 
-1. Open Firefox preferences window (Command-,).
-1. Navigate to Advanced > Certificates > View Certificates.
-1. Select Authorities from the tabs and click Import.
-1. Select the certificate and click Open.
-1. Check "Trust this CA to identify websites." and click OK.
+1. Open Firefox preferences window using **Command-,**.
+1. Navigate to **Advanced > Certificates > View Certificates**.
+1. Select **Authorities** from the tabs and click **Import**.
+1. Select the certificate and click **Open**.
+1. Check **Trust this CA to identify websites** and click **OK**.
