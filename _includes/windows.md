@@ -1,7 +1,13 @@
 ## Using the command line (Windows 7/8/8.1/10)
 
-Open the Command Prompt as Administrator and run the following command:
+Open the Command Prompt as Administrator and follow these steps.
 
+Navigate to where the file is located (Usually the Downloads folder, replace Username with your local Windows user):
+{% highlight sh %}
+dir c:\Users\Username\Downloads
+{% endhighlight %}
+
+Run the following command:
 {% highlight sh %}
 certutil -addstore -f "ROOT" korcett-root-certificate.pem
 {% endhighlight %}
@@ -31,5 +37,7 @@ To add certificates to the Trusted Root Certification Authorities store for a lo
 1. In the console tree, double-click **Certificates**.
 1. Right-click the **Trusted Root Certification Authorities** store.
 1. Click **All Tasks > Import** to import the certificates and follow the steps in the Certificate Import Wizard.
-1. In the file browser dialog box change the extension to **All Files (\*.\*)** to select the file.
-1. When closing the **Console Root** window, you can click **No** when prompted to save the changes.
+1. In the file browser dialog box change the extension to **All Files (\*.\*)** to select the file, click **Open** and then **Next**.
+1. In the **Certificate Store** step, make sure that **Place all certificates in the following store** is checked and **Trusted Root Certification Authorities** is selected, then click **Next**.
+1. Click **Finish**.
+1. You may now close the **Console Root** window, select **No** when prompted to save the console changes.
